@@ -1,0 +1,294 @@
+/* ==========================================================================
+   AI WEB - Luxury Maison & E-Commerce Atelier
+   Custom Luxury Styling, Animations, Typography & Micro-Interactions
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700&family=Cinzel:wght@400;600;700;800&display=swap');
+
+:root {
+  --font-serif: 'Cormorant Garamond', Georgia, serif;
+  --font-display: 'Cinzel', serif;
+  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  
+  /* Luxury Gold Accents */
+  --gold-primary: #D4AF37;
+  --gold-light: #F3E5AB;
+  --gold-hover: #C5A028;
+  --gold-dark: #997D21;
+  --gold-gradient: linear-gradient(135deg, #F3E5AB 0%, #D4AF37 50%, #AA771C 100%);
+  --gold-gradient-hover: linear-gradient(135deg, #FFF0C2 0%, #E5C358 50%, #BD892B 100%);
+  --gold-border: rgba(212, 175, 55, 0.25);
+  --gold-glow: 0 0 25px rgba(212, 175, 55, 0.2);
+}
+
+/* Light Mode Defaults (Editorial Warm Alabaster) */
+html {
+  font-family: var(--font-sans);
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.04);
+}
+
+.dark ::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.03);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #C5A028;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #D4AF37;
+}
+
+/* Typography Classes */
+.font-serif-luxury {
+  font-family: var(--font-serif);
+}
+
+.font-display-luxury {
+  font-family: var(--font-display);
+  letter-spacing: 0.12em;
+}
+
+/* Luxury Gold Foil & Shimmer Effects */
+.gold-gradient-text {
+  background: linear-gradient(135deg, #ECC870 0%, #D4AF37 40%, #B88E28 75%, #F5E09E 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% auto;
+  animation: shineGold 8s ease infinite;
+}
+
+@keyframes shineGold {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.gold-gradient-bg {
+  background: var(--gold-gradient);
+  color: #121212;
+}
+
+.gold-gradient-bg:hover {
+  background: var(--gold-gradient-hover);
+}
+
+.gold-border-glow {
+  border: 1px solid var(--gold-border);
+  box-shadow: 0 4px 20px -2px rgba(212, 175, 55, 0.12);
+}
+
+.gold-border-glow:hover {
+  border-color: rgba(212, 175, 55, 0.6);
+  box-shadow: 0 8px 30px -4px rgba(212, 175, 55, 0.25);
+}
+
+/* Glassmorphism Luxury Panels */
+.glass-panel-light {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(212, 175, 55, 0.15);
+}
+
+.glass-panel-dark {
+  background: rgba(18, 18, 20, 0.88);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+/* Shimmer Button Effect */
+.btn-shimmer {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-shimmer::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    60deg,
+    transparent 30%,
+    rgba(255, 255, 255, 0.25) 50%,
+    transparent 70%
+  );
+  transform: rotate(30deg) translateX(-100%);
+  transition: transform 0.75s ease;
+}
+
+.btn-shimmer:hover::after {
+  transform: rotate(30deg) translateX(100%);
+}
+
+/* Badge Bounce / Shake animation */
+@keyframes cartBounce {
+  0%, 100% { transform: scale(1); }
+  30% { transform: scale(1.3) rotate(-8deg); }
+  60% { transform: scale(1.2) rotate(8deg); }
+  80% { transform: scale(1.1) rotate(-4deg); }
+}
+
+.animate-cart-bounce {
+  animation: cartBounce 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* Heart Pulse */
+@keyframes heartPulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.35); }
+  100% { transform: scale(1); }
+}
+
+.animate-heart-pulse {
+  animation: heartPulse 0.4s ease-in-out;
+}
+
+/* Card Hover Image Crossfade */
+.product-card-image-wrap {
+  position: relative;
+  overflow: hidden;
+}
+
+.product-card-image-primary,
+.product-card-image-secondary {
+  transition: opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1), transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.product-card-image-secondary {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+.product-card:hover .product-card-image-primary {
+  opacity: 0;
+  transform: scale(1.06);
+}
+
+.product-card:hover .product-card-image-secondary {
+  opacity: 1;
+  transform: scale(1.06);
+}
+
+/* Virtual Credit Card 3D Styling */
+.virtual-credit-card {
+  perspective: 1000px;
+  background: linear-gradient(135deg, #1f1f23 0%, #111113 40%, #28282e 80%, #151518 100%);
+  border: 1px solid rgba(212, 175, 55, 0.4);
+  box-shadow: 0 15px 35px -5px rgba(0, 0, 0, 0.5), 0 0 20px rgba(212, 175, 55, 0.15);
+  border-radius: 16px;
+  position: relative;
+  overflow: hidden;
+}
+
+.virtual-credit-card::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(212, 175, 55, 0.25) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.chip-gold {
+  background: linear-gradient(135deg, #ffe082 0%, #ffca28 50%, #ffa000 100%);
+  border-radius: 4px;
+  box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.6), inset 0 -1px 2px rgba(0, 0, 0, 0.4);
+}
+
+/* Modal and Drawer transitions */
+.drawer-backdrop {
+  transition: opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.drawer-panel {
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Toast Slide In */
+@keyframes toastSlideIn {
+  from {
+    transform: translateY(100%) scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+}
+
+.toast-animate-in {
+  animation: toastSlideIn 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Free Shipping Progress bar animated stripe */
+@keyframes stripeMove {
+  0% { background-position: 0 0; }
+  100% { background-position: 40px 0; }
+}
+
+.shipping-progress-striped {
+  background-image: linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.2) 25%,
+    transparent 25%,
+    transparent 50%,
+    rgba(255, 255, 255, 0.2) 50%,
+    rgba(255, 255, 255, 0.2) 75%,
+    transparent 75%,
+    transparent
+  );
+  background-size: 20px 20px;
+  animation: stripeMove 1.5s linear infinite;
+}
+
+/* Print Styles for Invoice */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #order-confirmation-modal,
+  #order-confirmation-modal * {
+    visibility: visible;
+  }
+  #order-confirmation-modal {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: white !important;
+    color: black !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+}

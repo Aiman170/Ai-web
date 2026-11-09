@@ -1,0 +1,1342 @@
+<!DOCTYPE html>
+<html lang="en" class="dark scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI WEB | Haute Maison &amp; Luxury Atelier (Pakistan)</title>
+  <meta name="description" content="Discover handcrafted luxury leather goods, haute parfumerie, and high jewelry from AI WEB. Handcrafted in Europe and delivered nationwide across Pakistan in Pakistani Rupees (PKR)." />
+  <meta name="keywords" content="luxury bags pakistan, perfume pakistan, online shopping pakistan, high jewelry, luxury atelier, cash on delivery" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://ai-web-luxury.netlify.app/" />
+
+  <!-- Open Graph / Facebook / WhatsApp Preview -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://ai-web-luxury.netlify.app/" />
+  <meta property="og:title" content="AI WEB | Haute Maison &amp; Luxury Atelier (Pakistan)" />
+  <meta property="og:description" content="Handcrafted luxury leather goods, haute parfumerie, and fine timepieces. Nationwide express delivery in Pakistan." />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=1200&q=80" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="AI WEB | Luxury Atelier" />
+  <meta name="twitter:description" content="Handcrafted luxury goods delivered nationwide across Pakistan." />
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=1200&q=80" />
+
+  <!-- Structured Data Schema for Google Search -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "OnlineStore",
+    "name": "AI WEB Luxury Atelier",
+    "url": "https://ai-web-luxury.netlify.app/",
+    "description": "Artisanal luxury leather bags, haute parfumerie, and fine timepieces delivered across Pakistan.",
+    "currenciesAccepted": "PKR, USD, EUR, GBP",
+    "paymentAccepted": "Cash on Delivery, Credit Card, Bank Wire",
+    "priceRange": "$$$$"
+  }
+  </script>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            gold: {
+              50: '#FBF8EE',
+              100: '#F5EFD6',
+              200: '#EBDCAB',
+              300: '#E0C57C',
+              400: '#D7B252',
+              500: '#D4AF37', // Master luxury gold
+              600: '#B88E28',
+              700: '#916B1C',
+              800: '#6B4C15',
+              900: '#45300E',
+            }
+          },
+          fontFamily: {
+            serif: ['Cormorant Garamond', 'Georgia', 'serif'],
+            display: ['Cinzel', 'serif'],
+            sans: ['Plus Jakarta Sans', '-apple-system', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Fonts & Custom Luxury Styles -->
+  <link rel="stylesheet" href="css/luxury-custom.css" />
+</head>
+<body class="bg-[#FAF8F5] text-stone-900 dark:bg-[#0C0C0E] dark:text-stone-100 min-h-screen flex flex-col font-sans selection:bg-[#D4AF37] selection:text-black">
+
+  <!-- =====================================================================
+       TOP ANNOUNCEMENT TICKER (Pakistani Rupees Native)
+       ===================================================================== -->
+  <aside aria-label="Announcement" class="bg-stone-900 text-[#D4AF37] border-b border-[#D4AF37]/20 py-2 px-4 text-center text-xs tracking-widest uppercase font-semibold">
+    <div class="max-w-7xl mx-auto flex items-center justify-between sm:justify-center gap-4">
+      <span class="hidden md:inline text-stone-400">ISLAMABAD • LAHORE • KARACHI • PARIS • DUBAI</span>
+      <span id="top-announcement-text" class="truncate">⚜️ Complimentary White-Glove Express Delivery across Pakistan on Orders over Rs. 140,000 • Code: <strong class="text-white underline">LUXE20</strong> for 20% Off</span>
+      <span class="hidden md:inline text-stone-400">24/7 VIP CONCIERGE</span>
+    </div>
+  </aside>
+
+  <!-- =====================================================================
+       STICKY LUXURY HEADER
+       ===================================================================== -->
+  <header class="sticky top-0 z-40 bg-[#FAF8F5]/90 dark:bg-[#0C0C0E]/90 backdrop-blur-xl border-b border-stone-200/80 dark:border-stone-800/80 transition-colors">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-4">
+      
+      <!-- Left: Mobile Menu Button & Brand Monogram -->
+      <div class="flex items-center gap-4">
+        <button 
+          id="mobile-menu-btn" 
+          type="button" 
+          aria-label="Open Mobile Navigation" 
+          class="lg:hidden p-2 rounded-xl text-stone-700 dark:text-stone-300 hover:text-[#D4AF37] transition-colors"
+        >
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+
+        <a href="#" onclick="UI.closeProductDetail(); UI.filterByCategory('all'); return false;" class="flex items-center gap-2.5 group">
+          <div class="w-9 h-9 rounded-full border border-[#D4AF37] flex items-center justify-center text-[#D4AF37] group-hover:scale-105 transition-transform shadow-sm">
+            <span class="font-display font-bold text-xs tracking-wider">AI</span>
+          </div>
+          <div class="flex flex-col">
+            <span class="store-brand-name font-display text-xl font-bold tracking-[0.2em] text-stone-900 dark:text-stone-50 group-hover:text-[#D4AF37] transition-colors">
+              AI WEB
+            </span>
+            <span class="text-[9px] uppercase tracking-[0.3em] text-[#B88E28] dark:text-[#D4AF37] font-semibold -mt-1">
+              HAUTE MAISON
+            </span>
+          </div>
+        </a>
+      </div>
+
+      <!-- Center: Category Navigation Links (Desktop) -->
+      <nav class="hidden lg:flex items-center gap-8 text-xs font-semibold uppercase tracking-widest text-stone-700 dark:text-stone-300">
+        <button 
+          type="button" 
+          onclick="UI.closeProductDetail(); UI.filterByCategory('all')" 
+          class="hover:text-[#D4AF37] transition-colors py-2 border-b-2 border-transparent hover:border-[#D4AF37]"
+        >
+          All Collections
+        </button>
+        <button 
+          type="button" 
+          onclick="UI.closeProductDetail(); UI.filterByCategory('bags')" 
+          class="hover:text-[#D4AF37] transition-colors py-2 border-b-2 border-transparent hover:border-[#D4AF37]"
+        >
+          Bags & Leather
+        </button>
+        <button 
+          type="button" 
+          onclick="UI.closeProductDetail(); UI.filterByCategory('perfumes')" 
+          class="hover:text-[#D4AF37] transition-colors py-2 border-b-2 border-transparent hover:border-[#D4AF37]"
+        >
+          Haute Parfumerie
+        </button>
+        <button 
+          type="button" 
+          onclick="UI.closeProductDetail(); UI.filterByCategory('accessories')" 
+          class="hover:text-[#D4AF37] transition-colors py-2 border-b-2 border-transparent hover:border-[#D4AF37]"
+        >
+          Fine Accessories
+        </button>
+      </nav>
+
+      <!-- Right: Search Bar, Currency Switch (PKR default), Wishlist, Cart & Theme -->
+      <div class="flex items-center gap-3 sm:gap-4">
+        
+        <!-- Live Predictive Search (Desktop) -->
+        <div class="relative hidden sm:block w-48 md:w-60">
+          <div class="relative flex items-center">
+            <svg class="w-4 h-4 absolute left-3 text-stone-400 pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+            <input 
+              type="text" 
+              id="search-input" 
+              placeholder="Search creations in PKR..." 
+              autocomplete="off"
+              class="w-full pl-9 pr-8 py-2 rounded-full text-xs bg-stone-100/90 dark:bg-stone-900/90 border border-stone-200 dark:border-stone-800 text-stone-900 dark:text-stone-100 placeholder-stone-400 focus:outline-none focus:border-[#D4AF37] transition-all"
+            />
+            <span class="absolute right-2.5 px-1.5 py-0.5 rounded text-[9px] font-mono bg-stone-200 dark:bg-stone-800 text-stone-500 pointer-events-none hidden md:inline">⌘K</span>
+          </div>
+
+          <!-- Autocomplete Dropdown -->
+          <div id="search-dropdown" class="hidden absolute top-full left-0 right-0 mt-2 bg-white dark:bg-[#151518] rounded-2xl shadow-2xl border border-stone-200 dark:border-stone-800 overflow-hidden z-50"></div>
+        </div>
+
+        <!-- Currency Selector (PKR Default) -->
+        <div class="relative">
+          <select 
+            id="currency-select" 
+            aria-label="Select Currency"
+            class="appearance-none bg-stone-100 dark:bg-stone-900 border border-stone-200 dark:border-stone-800 rounded-xl px-2.5 py-1.5 text-xs font-semibold text-stone-800 dark:text-stone-200 focus:outline-none focus:border-[#D4AF37] cursor-pointer"
+          >
+            <!-- Injected by UI.renderCurrencyOptions() with PKR on top -->
+          </select>
+        </div>
+
+        <!-- Dark/Light Theme Toggle -->
+        <button 
+          id="theme-toggle" 
+          type="button" 
+          class="theme-toggle-btn p-2 rounded-xl text-stone-600 dark:text-stone-300 hover:text-[#D4AF37] hover:bg-stone-100 dark:hover:bg-stone-800/60 transition-colors"
+          aria-label="Toggle Theme"
+        >
+          <!-- Icon injected by JS -->
+        </button>
+
+        <!-- Wishlist Button -->
+        <button 
+          type="button" 
+          onclick="UI.openWishlistModal()" 
+          class="relative p-2 rounded-xl text-stone-600 dark:text-stone-300 hover:text-[#D4AF37] hover:bg-stone-100 dark:hover:bg-stone-800/60 transition-colors"
+          aria-label="Open Wishlist"
+        >
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+          <span class="wishlist-count-badge hidden absolute -top-1 -right-1 w-4 h-4 rounded-full bg-red-600 text-white text-[10px] font-bold flex items-center justify-center">0</span>
+        </button>
+
+        <!-- Cart Button with Animated Icon & Badge -->
+        <button 
+          id="header-cart-icon" 
+          type="button" 
+          onclick="UI.openCartDrawer()" 
+          class="relative p-2.5 rounded-xl bg-stone-900 dark:bg-stone-100 text-white dark:text-stone-900 hover:bg-[#D4AF37] dark:hover:bg-[#D4AF37] transition-all active:scale-95 shadow-md flex items-center gap-1.5"
+          aria-label="Shopping Bag"
+        >
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg>
+          <span class="cart-count-badge hidden px-1.5 py-0.5 rounded-full bg-[#D4AF37] text-black font-extrabold text-[10px] leading-none">0</span>
+        </button>
+
+      </div>
+    </div>
+
+    <!-- Mobile Search Bar -->
+    <div class="sm:hidden px-4 pb-3">
+      <div class="relative flex items-center">
+        <svg class="w-4 h-4 absolute left-3 text-stone-400 pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+        <input 
+          type="text" 
+          id="mobile-search-input" 
+          placeholder="Search creations in PKR..." 
+          class="w-full pl-9 pr-4 py-2 rounded-full text-xs bg-stone-100 dark:bg-stone-900 border border-stone-200 dark:border-stone-800 text-stone-900 dark:text-stone-100 placeholder-stone-400 focus:outline-none focus:border-[#D4AF37]"
+        />
+      </div>
+    </div>
+  </header>
+
+  <!-- =====================================================================
+       MOBILE NAVIGATION DRAWER
+       ===================================================================== -->
+  <div id="mobile-menu-drawer" class="hidden fixed inset-0 z-50 flex">
+    <div class="fixed inset-0 bg-black/60 backdrop-blur-sm" onclick="document.getElementById('mobile-menu-drawer').classList.add('hidden')"></div>
+    <div class="relative w-4/5 max-w-xs bg-white dark:bg-[#111113] p-6 shadow-2xl flex flex-col justify-between z-10">
+      <div>
+        <div class="flex items-center justify-between pb-6 border-b border-stone-200 dark:border-stone-800">
+          <div class="flex items-center gap-2">
+            <div class="w-7 h-7 rounded-full border border-[#D4AF37] flex items-center justify-center text-[#D4AF37]">
+              <span class="font-display font-bold text-[10px]">AI</span>
+            </div>
+            <span class="store-brand-name font-display font-bold tracking-widest text-sm">AI WEB</span>
+          </div>
+          <button id="close-mobile-menu" class="p-2 text-stone-400 hover:text-white">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+          </button>
+        </div>
+
+        <nav class="mt-6 flex flex-col gap-4 text-sm font-semibold tracking-wider uppercase">
+          <button onclick="UI.filterByCategory('all'); UI.closeProductDetail(); document.getElementById('mobile-menu-drawer').classList.add('hidden')" class="text-left py-2 hover:text-[#D4AF37]">All Collections</button>
+          <button onclick="UI.filterByCategory('bags'); UI.closeProductDetail(); document.getElementById('mobile-menu-drawer').classList.add('hidden')" class="text-left py-2 hover:text-[#D4AF37]">Bags & Leather</button>
+          <button onclick="UI.filterByCategory('perfumes'); UI.closeProductDetail(); document.getElementById('mobile-menu-drawer').classList.add('hidden')" class="text-left py-2 hover:text-[#D4AF37]">Haute Parfumerie</button>
+          <button onclick="UI.filterByCategory('accessories'); UI.closeProductDetail(); document.getElementById('mobile-menu-drawer').classList.add('hidden')" class="text-left py-2 hover:text-[#D4AF37]">Fine Accessories</button>
+          <button onclick="UI.openWishlistModal(); document.getElementById('mobile-menu-drawer').classList.add('hidden')" class="text-left py-2 text-[#D4AF37]">Private Wishlist</button>
+          <button onclick="UI.openCustomizerModal(); document.getElementById('mobile-menu-drawer').classList.add('hidden')" class="text-left py-2 text-[#D4AF37] border-t border-stone-200 dark:border-stone-800 pt-4 flex items-center gap-2">
+            <span>⚙️ Edit Website Content</span>
+          </button>
+        </nav>
+      </div>
+
+      <div class="pt-6 border-t border-stone-200 dark:border-stone-800 flex items-center justify-between">
+        <button id="mobile-theme-toggle" class="theme-toggle-btn text-xs font-semibold flex items-center gap-2 text-stone-500">
+          <span>Mode Switch</span>
+        </button>
+        <span class="text-[10px] text-stone-400">© 2026 AI WEB PAKISTAN</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- =====================================================================
+       MAIN CONTENT ROUTER
+       ===================================================================== -->
+  <main class="flex-1">
+
+    <!-- VIEW 1: CATALOG VIEW -->
+    <section id="catalog-view" class="transition-opacity duration-300">
+      
+      <!-- HERO BANNER -->
+      <div class="relative min-h-[580px] lg:min-h-[660px] flex items-center overflow-hidden bg-stone-950 text-white">
+        <div class="absolute inset-0 z-0">
+          <img 
+            src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=2000&q=85" 
+            alt="AI WEB Luxury Editorial Campaign" 
+            class="w-full h-full object-cover object-center opacity-35 filter brightness-75 scale-105"
+          />
+          <div class="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-transparent"></div>
+          <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-[#D4AF37]/15 via-transparent to-transparent"></div>
+        </div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28">
+          <div class="max-w-2xl">
+            <!-- Badge -->
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-[#D4AF37]/40 bg-stone-900/80 backdrop-blur-md mb-6">
+              <span class="w-2 h-2 rounded-full bg-[#D4AF37] animate-pulse"></span>
+              <span id="hero-badge-text" class="text-[10px] sm:text-xs uppercase tracking-[0.25em] text-[#D4AF37] font-semibold">The 2026 Sovereign Edition</span>
+            </div>
+
+            <!-- Headline -->
+            <h1 id="hero-headline-text" class="font-serif-luxury text-4xl sm:text-6xl lg:text-7xl font-normal leading-[1.08] tracking-tight">
+              Artisanal Perfection, <br/>
+              <span class="italic gold-gradient-text font-serif">Timeless Modernity.</span>
+            </h1>
+
+            <p id="hero-subtitle-text" class="mt-6 text-sm sm:text-base text-stone-300 leading-relaxed font-light max-w-lg">
+              Explore meticulously handcrafted leather goods, rare botanical extraits de parfum, and certified high jewelry conceived in European and Pakistani ateliers.
+            </p>
+
+            <!-- CTA Buttons -->
+            <div class="mt-8 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
+              <a 
+                href="#products-section" 
+                class="px-8 py-4 rounded-2xl gold-gradient-bg text-black font-semibold text-xs uppercase tracking-widest text-center shadow-[0_10px_30px_rgba(212,175,55,0.3)] hover:shadow-[0_15px_40px_rgba(212,175,55,0.45)] transition-all btn-shimmer"
+              >
+                Shop in Pakistani Rupees
+              </a>
+              <button 
+                type="button" 
+                onclick="UI.filterByCategory('perfumes'); document.getElementById('products-section').scrollIntoView({ behavior: 'smooth' });"
+                class="px-8 py-4 rounded-2xl border border-white/30 hover:border-[#D4AF37] text-white hover:text-[#D4AF37] font-semibold text-xs uppercase tracking-widest text-center backdrop-blur-sm transition-all"
+              >
+                Haute Parfumerie
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- BRAND VALUE HIGHLIGHTS BAR -->
+      <section aria-label="Brand Pillars" class="border-y border-stone-200/80 dark:border-stone-800/80 bg-white/70 dark:bg-[#121214]/80 backdrop-blur-md py-6 px-4">
+        <div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 text-center md:text-left">
+          
+          <div class="flex items-center gap-3.5 justify-center md:justify-start">
+            <div class="w-10 h-10 rounded-xl bg-[#D4AF37]/10 border border-[#D4AF37]/30 flex items-center justify-center text-[#D4AF37] shrink-0">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+            </div>
+            <div>
+              <h4 class="text-xs font-semibold uppercase tracking-wider text-stone-900 dark:text-stone-100">100% Certified Atelier</h4>
+              <p class="text-[11px] text-stone-500 mt-0.5">Numbered authenticity dossier</p>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-3.5 justify-center md:justify-start">
+            <div class="w-10 h-10 rounded-xl bg-[#D4AF37]/10 border border-[#D4AF37]/30 flex items-center justify-center text-[#D4AF37] shrink-0">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/></svg>
+            </div>
+            <div>
+              <h4 class="text-xs font-semibold uppercase tracking-wider text-stone-900 dark:text-stone-100">Delivery in Pakistan</h4>
+              <p class="text-[11px] text-stone-500 mt-0.5">Complimentary over Rs. 140,000</p>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-3.5 justify-center md:justify-start">
+            <div class="w-10 h-10 rounded-xl bg-[#D4AF37]/10 border border-[#D4AF37]/30 flex items-center justify-center text-[#D4AF37] shrink-0">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/></svg>
+            </div>
+            <div>
+              <h4 class="text-xs font-semibold uppercase tracking-wider text-stone-900 dark:text-stone-100">Signature Presentation</h4>
+              <p class="text-[11px] text-stone-500 mt-0.5">Silk ribbon & wax seal packaging</p>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-3.5 justify-center md:justify-start">
+            <div class="w-10 h-10 rounded-xl bg-[#D4AF37]/10 border border-[#D4AF37]/30 flex items-center justify-center text-[#D4AF37] shrink-0">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+            </div>
+            <div>
+              <h4 class="text-xs font-semibold uppercase tracking-wider text-stone-900 dark:text-stone-100">Cash on Delivery</h4>
+              <p class="text-[11px] text-stone-500 mt-0.5">Nationwide in Pakistan & Card Vault</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- FEATURED CATEGORY SHOWCASES -->
+      <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          
+          <div 
+            onclick="UI.filterByCategory('bags'); document.getElementById('products-section').scrollIntoView({ behavior: 'smooth' });"
+            class="group relative h-72 rounded-3xl overflow-hidden cursor-pointer border border-stone-200 dark:border-stone-800 shadow-md hover:shadow-2xl transition-all"
+          >
+            <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=800&q=80" alt="Bags" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 brightness-75"/>
+            <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent"></div>
+            <div class="absolute bottom-6 left-6 right-6">
+              <span class="text-[10px] uppercase font-semibold text-[#D4AF37] tracking-widest">Italian Calfskin</span>
+              <h3 class="font-serif-luxury text-2xl text-white font-medium mt-1">Bags & Leather</h3>
+              <p class="text-xs text-stone-300 mt-1 line-clamp-1">Grand totes, pochettes & weekender trunks</p>
+            </div>
+          </div>
+
+          <div 
+            onclick="UI.filterByCategory('perfumes'); document.getElementById('products-section').scrollIntoView({ behavior: 'smooth' });"
+            class="group relative h-72 rounded-3xl overflow-hidden cursor-pointer border border-stone-200 dark:border-stone-800 shadow-md hover:shadow-2xl transition-all"
+          >
+            <img src="https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?auto=format&fit=crop&w=800&q=80" alt="Haute Parfumerie" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 brightness-75"/>
+            <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent"></div>
+            <div class="absolute bottom-6 left-6 right-6">
+              <span class="text-[10px] uppercase font-semibold text-[#D4AF37] tracking-widest">Pure Extraits (32%)</span>
+              <h3 class="font-serif-luxury text-2xl text-white font-medium mt-1">Haute Parfumerie</h3>
+              <p class="text-xs text-stone-300 mt-1 line-clamp-1">Ambergris, wild Assamese oud & Grasse rose</p>
+            </div>
+          </div>
+
+          <div 
+            onclick="UI.filterByCategory('accessories'); document.getElementById('products-section').scrollIntoView({ behavior: 'smooth' });"
+            class="group relative h-72 rounded-3xl overflow-hidden cursor-pointer border border-stone-200 dark:border-stone-800 shadow-md hover:shadow-2xl transition-all"
+          >
+            <img src="https://images.unsplash.com/photo-1524592094714-0f0654e20314?auto=format&fit=crop&w=800&q=80" alt="Fine Accessories" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 brightness-75"/>
+            <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent"></div>
+            <div class="absolute bottom-6 left-6 right-6">
+              <span class="text-[10px] uppercase font-semibold text-[#D4AF37] tracking-widest">High Horology & Silk</span>
+              <h3 class="font-serif-luxury text-2xl text-white font-medium mt-1">Fine Accessories</h3>
+              <p class="text-xs text-stone-300 mt-1 line-clamp-1">Flying tourbillons, 18k cufflinks & Como scarves</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- PRODUCTS SECTION & FILTER TOOLBAR -->
+      <section id="products-section" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
+        
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 pb-8 border-b border-stone-200 dark:border-stone-800">
+          <div>
+            <span class="text-xs uppercase tracking-[0.25em] text-[#B88E28] dark:text-[#D4AF37] font-semibold">The Atelier Catalog (PKR Rates)</span>
+            <h2 class="font-serif-luxury text-3xl sm:text-4xl font-medium text-stone-900 dark:text-stone-50 mt-1">Curated Masterpieces</h2>
+            <p class="text-xs text-stone-500 dark:text-stone-400 mt-1">All pricing displayed in Pakistani Rupees (PKR) with live exchange options.</p>
+          </div>
+
+          <div class="flex items-center gap-3">
+            <span id="products-count-badge" class="px-3.5 py-1.5 rounded-full text-xs font-semibold bg-stone-100 dark:bg-stone-900 border border-stone-300 dark:border-stone-800 text-stone-700 dark:text-stone-300">
+              12 Creations
+            </span>
+          </div>
+        </div>
+
+        <!-- Filter & Sorting Controls Bar (PKR Range) -->
+        <div class="mt-8 p-4 sm:p-6 rounded-2xl bg-white/70 dark:bg-[#121215]/80 border border-stone-200/80 dark:border-stone-800/80 shadow-sm backdrop-blur-md">
+          <div class="grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
+            
+            <div class="md:col-span-7 flex items-center gap-2 overflow-x-auto pb-1 sm:pb-0">
+              <button 
+                type="button" 
+                onclick="UI.filterByCategory('all')" 
+                data-category="all" 
+                class="category-filter-btn px-4 py-2 rounded-xl text-xs uppercase tracking-wider font-semibold border transition-all bg-[#D4AF37] text-black border-[#D4AF37] shadow-sm shrink-0"
+              >
+                All Creations
+              </button>
+              <button 
+                type="button" 
+                onclick="UI.filterByCategory('bags')" 
+                data-category="bags" 
+                class="category-filter-btn px-4 py-2 rounded-xl text-xs uppercase tracking-wider font-semibold border transition-all border-stone-300 dark:border-stone-700 text-stone-700 dark:text-stone-300 hover:border-[#D4AF37] shrink-0"
+              >
+                Bags & Leather
+              </button>
+              <button 
+                type="button" 
+                onclick="UI.filterByCategory('perfumes')" 
+                data-category="perfumes" 
+                class="category-filter-btn px-4 py-2 rounded-xl text-xs uppercase tracking-wider font-semibold border transition-all border-stone-300 dark:border-stone-700 text-stone-700 dark:text-stone-300 hover:border-[#D4AF37] shrink-0"
+              >
+                Haute Parfumerie
+              </button>
+              <button 
+                type="button" 
+                onclick="UI.filterByCategory('accessories')" 
+                data-category="accessories" 
+                class="category-filter-btn px-4 py-2 rounded-xl text-xs uppercase tracking-wider font-semibold border transition-all border-stone-300 dark:border-stone-700 text-stone-700 dark:text-stone-300 hover:border-[#D4AF37] shrink-0"
+              >
+                Fine Accessories
+              </button>
+            </div>
+
+            <!-- Price Slider in PKR & Sort Dropdown -->
+            <div class="md:col-span-5 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
+              <div class="flex-1">
+                <div class="flex items-center justify-between text-xs mb-1">
+                  <span class="text-stone-500 font-medium">Max Price (PKR)</span>
+                  <span id="price-slider-display" class="font-bold text-stone-900 dark:text-stone-100">Rs. 3,000,000+</span>
+                </div>
+                <input 
+                  type="range" 
+                  id="price-range-slider" 
+                  min="50000" 
+                  max="3000000" 
+                  step="50000" 
+                  value="3000000" 
+                  class="w-full accent-[#D4AF37] h-1.5 bg-stone-200 dark:bg-stone-700 rounded-lg cursor-pointer"
+                />
+              </div>
+
+              <div class="sm:w-44">
+                <select 
+                  id="sort-select" 
+                  aria-label="Sort Creations" 
+                  class="w-full px-3 py-2 text-xs font-semibold rounded-xl bg-stone-100 dark:bg-stone-900 border border-stone-300 dark:border-stone-700 text-stone-800 dark:text-stone-200 focus:outline-none focus:border-[#D4AF37] cursor-pointer"
+                >
+                  <option value="featured">Featured Curations</option>
+                  <option value="price-asc">Price: Low to High</option>
+                  <option value="price-desc">Price: High to Low</option>
+                  <option value="rating">Client Rating</option>
+                  <option value="reviews">Most Reviewed</option>
+                </select>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- PRODUCT GRID (Injected dynamically) -->
+        <div id="products-grid" class="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 sm:gap-8">
+          <!-- Rendered by UI.renderProductsGrid() in Pakistani Rupees -->
+        </div>
+
+      </section>
+
+      <!-- BRAND STORY ATELIER SPOTLIGHT -->
+      <section class="border-t border-stone-200 dark:border-stone-800 bg-[#F4EFE6]/50 dark:bg-[#0E0E10] py-20 px-4">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          <div class="lg:col-span-6 relative">
+            <div class="aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl border border-stone-300 dark:border-stone-800">
+              <img 
+                src="https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=1200&q=80" 
+                alt="Master Artisan at Work" 
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="hidden sm:block absolute -bottom-6 -right-6 p-6 rounded-2xl bg-white dark:bg-[#161618] border border-[#D4AF37]/30 shadow-xl max-w-xs">
+              <span class="text-[10px] uppercase font-semibold text-[#D4AF37] tracking-widest">Heritage Benchmark</span>
+              <p class="font-serif-luxury text-base text-stone-900 dark:text-stone-100 mt-1 italic">
+                "We do not mass manufacture; we slowly bring objects of devotion into existence."
+              </p>
+            </div>
+          </div>
+
+          <div class="lg:col-span-6">
+            <span class="text-xs uppercase tracking-[0.25em] text-[#B88E28] dark:text-[#D4AF37] font-semibold">The Florence & Grasse Workshops</span>
+            <h2 class="font-serif-luxury text-3xl sm:text-4xl font-medium text-stone-900 dark:text-stone-50 mt-2 leading-tight">
+              Generational Heritage, Elevated by Pure Intention.
+            </h2>
+            <p class="text-sm text-stone-600 dark:text-stone-400 mt-5 leading-relaxed">
+              Every creation bearing the <strong>AI WEB</strong> hallmark begins in the hands of master craftsmen. From our vegetable-tanned Bavarian bridle hides to rare Assamese agarwood oils macerated for six months in oak casks, we reject compromise at every junction.
+            </p>
+            <div class="mt-8 grid grid-cols-3 gap-6 pt-6 border-t border-stone-300 dark:border-stone-800">
+              <div>
+                <span class="font-serif-luxury text-3xl font-semibold text-[#B88E28] dark:text-[#D4AF37]">100%</span>
+                <p class="text-xs text-stone-500 mt-0.5">European Handcrafted</p>
+              </div>
+              <div>
+                <span class="font-serif-luxury text-3xl font-semibold text-[#B88E28] dark:text-[#D4AF37]">32%</span>
+                <p class="text-xs text-stone-500 mt-0.5">Pure Perfume Oils</p>
+              </div>
+              <div>
+                <span class="font-serif-luxury text-3xl font-semibold text-[#B88E28] dark:text-[#D4AF37]">24k</span>
+                <p class="text-xs text-stone-500 mt-0.5">Gold-Dipped Hardware</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- VIP PRIVILEGE NEWSLETTER -->
+      <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">
+        <div class="max-w-xl mx-auto">
+          <div class="w-12 h-12 rounded-full border border-[#D4AF37] mx-auto flex items-center justify-center text-[#D4AF37] mb-4">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+          </div>
+          <span class="text-xs uppercase tracking-[0.25em] text-[#B88E28] dark:text-[#D4AF37] font-semibold">The Sovereign Circle</span>
+          <h3 class="font-serif-luxury text-3xl font-medium text-stone-900 dark:text-stone-100 mt-2">Private Salon Invitations</h3>
+          <p class="text-xs text-stone-500 dark:text-stone-400 mt-2">Subscribe to receive private preview access to limited harvest fragrances and numbered trunk releases.</p>
+
+          <form onsubmit="event.preventDefault(); UI.showToast('Bienvenue au Cercle Privé', 'Your invitation and a complimentary Rs. 15,000 voucher (Code: VIP50) have been registered.'); this.reset();" class="mt-6 flex flex-col sm:flex-row gap-3">
+            <input 
+              type="email" 
+              required 
+              placeholder="Enter your email address" 
+              class="flex-1 px-4 py-3 rounded-xl bg-stone-100 dark:bg-stone-900 border border-stone-300 dark:border-stone-700 text-xs text-stone-900 dark:text-stone-100 placeholder-stone-400 focus:outline-none focus:border-[#D4AF37]"
+            />
+            <button 
+              type="submit" 
+              class="px-6 py-3 rounded-xl gold-gradient-bg text-black font-semibold text-xs uppercase tracking-widest shadow-md hover:shadow-lg transition-all btn-shimmer"
+            >
+              Request Access
+            </button>
+          </form>
+        </div>
+      </section>
+
+    </section>
+
+    <!-- VIEW 2: DEDICATED PRODUCT DETAIL VIEW (PDP) -->
+    <section id="product-detail-view" class="hidden max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div id="pdp-container">
+        <!-- Injected dynamically by UI.renderProductDetailPage() -->
+      </div>
+    </section>
+
+    <!-- VIEW 3: STREAMLINED CHECKOUT (Pakistan Addresses & COD) -->
+    <section id="checkout-view" class="hidden max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      
+      <div class="flex items-center justify-between pb-8 border-b border-stone-200 dark:border-stone-800">
+        <div>
+          <span class="text-xs uppercase tracking-widest text-[#B88E28] dark:text-[#D4AF37] font-semibold">Vault Protocol</span>
+          <h2 class="font-serif-luxury text-3xl font-medium text-stone-900 dark:text-stone-100 mt-1">Bespoke Checkout (PKR)</h2>
+        </div>
+        <button 
+          type="button" 
+          onclick="checkoutController.closeCheckout()" 
+          class="text-xs font-semibold uppercase tracking-wider text-stone-500 hover:text-stone-900 dark:hover:text-stone-100 flex items-center gap-1.5 transition-colors"
+        >
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/></svg>
+          Return to Shopping
+        </button>
+      </div>
+
+      <!-- Checkout Stepper Progress -->
+      <div class="py-8 flex items-center justify-between max-w-xl mx-auto">
+        <div class="flex items-center gap-2 cursor-pointer" onclick="checkoutController.goToStep(1)">
+          <div id="step-indicator-1" class="w-8 h-8 rounded-full bg-[#D4AF37] text-black font-semibold flex items-center justify-center text-xs shadow-md">1</div>
+          <span id="step-title-1" class="text-xs font-semibold uppercase tracking-wider text-[#D4AF37]">Shipping</span>
+        </div>
+        <div class="flex-1 h-px bg-stone-300 dark:bg-stone-700 mx-4"></div>
+        <div class="flex items-center gap-2 cursor-pointer" onclick="checkoutController.goToStep(2)">
+          <div id="step-indicator-2" class="w-8 h-8 rounded-full border border-stone-300 dark:border-stone-700 text-stone-400 flex items-center justify-center text-xs">2</div>
+          <span id="step-title-2" class="text-xs font-semibold uppercase tracking-wider text-stone-400">Delivery</span>
+        </div>
+        <div class="flex-1 h-px bg-stone-300 dark:bg-stone-700 mx-4"></div>
+        <div class="flex items-center gap-2 cursor-pointer" onclick="checkoutController.goToStep(3)">
+          <div id="step-indicator-3" class="w-8 h-8 rounded-full border border-stone-300 dark:border-stone-700 text-stone-400 flex items-center justify-center text-xs">3</div>
+          <span id="step-title-3" class="text-xs font-semibold uppercase tracking-wider text-stone-400">Payment</span>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start mt-4">
+        
+        <div class="lg:col-span-7 bg-white dark:bg-[#121215] p-6 sm:p-8 rounded-3xl border border-stone-200 dark:border-stone-800 shadow-xl">
+          
+          <!-- STEP 1: SHIPPING ADDRESS (Pakistan Prefilled) -->
+          <div id="step-content-1">
+            <h3 class="font-serif-luxury text-2xl font-medium text-stone-900 dark:text-stone-100 mb-6">Recipient & Delivery Residence</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div class="sm:col-span-2">
+                <label for="checkout-fullName" class="block text-xs font-semibold uppercase tracking-wider text-stone-500 mb-1.5">Full Name *</label>
+                <input id="checkout-fullName" type="text" placeholder="e.g. Asad Mansoor / Zainab Malik" class="w-full px-4 py-3 rounded-xl bg-stone-50 dark:bg-stone-900 border border-stone-300 dark:border-stone-700 text-xs text-stone-900 dark:text-stone-100 focus:outline-none focus:border-[#D4AF37]"/>
+              </div>
+
+              <div>
+                <label for="checkout-email" class="block text-xs font-semibold uppercase tracking-wider text-stone-500 mb-1.5">Email Address *</label>
+                <input id="checkout-email" type="email" placeholder="client@luxury.pk" class="w-full px-4 py-3 rounded-xl bg-stone-50 dark:bg-stone-900 border border-stone-300 dark:border-stone-700 text-xs text-stone-900 dark:text-stone-100 focus:outline-none focus:border-[#D4AF37]"/>
+              </div>
+
+              <div>
+                <label for="checkout-phone" class="block text-xs font-semibold uppercase tracking-wider text-stone-500 mb-1.5">Phone (Mobile) *</label>
+                <input id="checkout-phone" type="tel" placeholder="+92 300 1234567" class="w-full px-4 py-3 rounded-xl bg-stone-50 dark:bg-stone-900 border border-stone-300 dark:border-stone-700 text-xs text-stone-900 dark:text-stone-100 focus:outline-none focus:border-[#D4AF37]"/>
+              </div>
+
+              <div class="sm:col-span-2">
+                <label for="checkout-address" class="block text-xs font-semibold uppercase tracking-wider text-stone-500 mb-1.5">Delivery Address (Street / Sector) *</label>
+                <input id="checkout-address" type="text" placeholder="e.g. Sector F-7/2, Street 14, House 22" class="w-full px-4 py-3 rounded-xl bg-stone-50 dark:bg-stone-900 border border-stone-300 dark:border-stone-700 text-xs text-stone-900 dark:text-stone-100 focus:outline-none focus:border-[#D4AF37]"/>
+              </div>
+
+              <div>
+                <label for="checkout-suite" class="block text-xs font-semibold uppercase tracking-wider text-stone-500 mb-1.5">Apartment / Suite / Phase</label>
+                <input id="checkout-suite" type="text" placeholder="DHA Phase 5 / Gulberg" class="w-full px-4 py-3 rounded-xl bg-stone-50 dark:bg-stone-900 border border-stone-300 dark:border-stone-700 text-xs text-stone-900 dark:text-stone-100 focus:outline-none focus:border-[#D4AF37]"/>
+              </div>
+
+              <div>
+                <label for="checkout-city" class="block text-xs font-semibold uppercase tracking-wider text-stone-500 mb-1.5">City (Pakistan) *</label>
+                <select id="checkout-city" class="w-full px-4 py-3 rounded-xl bg-stone-50 dark:bg-stone-900 border border-stone-300 dark:border-stone-700 text-xs text-stone-900 dark:text-stone-100 focus:outline-none focus:border-[#D4AF37]">
+                  <option value="Islamabad" selected>Islamabad</option>
+                  <option value="Lahore">Lahore</option>
+                  <option value="Karachi">Karachi</option>
+                  <option value="Rawalpindi">Rawalpindi</option>
+                  <option value="Faisalabad">Faisalabad</option>
+                  <option value="Peshawar">Peshawar</option>
+                  <option value="Multan">Multan</option>
+                  <option value="Quetta">Quetta</option>
+                  <option value="Sialkot">Sialkot</option>
+                  <option value="Gujranwala">Gujranwala</option>
+                  <option value="Hyderabad">Hyderabad</option>
+                </select>
+              </div>
+
+              <div>
+                <label for="checkout-postalCode" class="block text-xs font-semibold uppercase tracking-wider text-stone-500 mb-1.5">Postal Code *</label>
+                <input id="checkout-postalCode" type="text" placeholder="44000" class="w-full px-4 py-3 rounded-xl bg-stone-50 dark:bg-stone-900 border border-stone-300 dark:border-stone-700 text-xs text-stone-900 dark:text-stone-100 focus:outline-none focus:border-[#D4AF37]"/>
+              </div>
+
+              <div>
+                <label for="checkout-country" class="block text-xs font-semibold uppercase tracking-wider text-stone-500 mb-1.5">Country</label>
+                <select id="checkout-country" class="w-full px-4 py-3 rounded-xl bg-stone-50 dark:bg-stone-900 border border-stone-300 dark:border-stone-700 text-xs text-stone-900 dark:text-stone-100 focus:outline-none focus:border-[#D4AF37]">
+                  <option value="Pakistan" selected>Pakistan</option>
+                  <option value="United Arab Emirates">United Arab Emirates</option>
+                  <option value="United Kingdom">United Kingdom</option>
+                  <option value="United States">United States</option>
+                  <option value="Saudi Arabia">Saudi Arabia</option>
+                </select>
+              </div>
+            </div>
+
+            <button 
+              type="button" 
+              onclick="checkoutController.goToStep(2)" 
+              class="w-full mt-8 py-4 rounded-xl gold-gradient-bg text-black font-semibold text-xs uppercase tracking-widest shadow-lg hover:shadow-xl transition-all btn-shimmer"
+            >
+              Continue to Delivery Method
+            </button>
+          </div>
+
+          <!-- STEP 2: DELIVERY METHOD -->
+          <div id="step-content-2" class="hidden">
+            <h3 class="font-serif-luxury text-2xl font-medium text-stone-900 dark:text-stone-100 mb-2">Select Delivery Tier (Pakistan)</h3>
+            <p class="text-xs text-stone-500 dark:text-stone-400 mb-6">All consignments are fully insured with white-glove security protocol.</p>
+
+            <div class="space-y-4">
+              <div 
+                onclick="checkoutController.setDeliveryMethod('standard', 0, 'Standard White-Glove (Pakistan)', '3–5 Business Days')" 
+                data-id="standard" 
+                class="delivery-option-card p-5 rounded-2xl border border-[#D4AF37] bg-[#D4AF37]/10 cursor-pointer transition-all flex items-center justify-between"
+              >
+                <div class="flex items-center gap-4">
+                  <div class="w-10 h-10 rounded-xl bg-stone-200 dark:bg-stone-800 flex items-center justify-center text-[#D4AF37]">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"/></svg>
+                  </div>
+                  <div>
+                    <h4 class="text-sm font-semibold text-stone-900 dark:text-stone-100">Standard White-Glove Delivery</h4>
+                    <p class="text-xs text-stone-500 mt-0.5">3–5 Business Days • Signature upon receipt</p>
+                  </div>
+                </div>
+                <span class="text-xs font-semibold text-emerald-600 dark:text-emerald-400 uppercase tracking-wider">Complimentary (Over Rs. 140,000)</span>
+              </div>
+
+              <div 
+                onclick="checkoutController.setDeliveryMethod('priority', 4500, 'Priority VIP Express (TCS / DHL)', '1–2 Business Days')" 
+                data-id="priority" 
+                class="delivery-option-card p-5 rounded-2xl border border-stone-200 dark:border-stone-800 cursor-pointer transition-all flex items-center justify-between"
+              >
+                <div class="flex items-center gap-4">
+                  <div class="w-10 h-10 rounded-xl bg-stone-200 dark:bg-stone-800 flex items-center justify-center text-[#D4AF37]">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/></svg>
+                  </div>
+                  <div>
+                    <h4 class="text-sm font-semibold text-stone-900 dark:text-stone-100">Priority VIP Express Air Cargo</h4>
+                    <p class="text-xs text-stone-500 mt-0.5">1–2 Business Days • Dedicated tracking & fast courier</p>
+                  </div>
+                </div>
+                <span class="text-xs font-bold text-stone-900 dark:text-stone-100 font-sans">+Rs. 4,500</span>
+              </div>
+
+              <div 
+                onclick="checkoutController.setDeliveryMethod('armored', 15000, 'Armored Sovereign Vault Courier', 'Within 24 Hours')" 
+                data-id="armored" 
+                class="delivery-option-card p-5 rounded-2xl border border-stone-200 dark:border-stone-800 cursor-pointer transition-all flex items-center justify-between"
+              >
+                <div class="flex items-center gap-4">
+                  <div class="w-10 h-10 rounded-xl bg-stone-200 dark:bg-stone-800 flex items-center justify-center text-[#D4AF37]">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+                  </div>
+                  <div>
+                    <h4 class="text-sm font-semibold text-stone-900 dark:text-stone-100">Armored Sovereign Vault Delivery</h4>
+                    <p class="text-xs text-stone-500 mt-0.5">Guaranteed 24-hr private armed courier handoff</p>
+                  </div>
+                </div>
+                <span class="text-xs font-bold text-stone-900 dark:text-stone-100 font-sans">+Rs. 15,000</span>
+              </div>
+            </div>
+
+            <div class="mt-8 flex gap-3">
+              <button 
+                type="button" 
+                onclick="checkoutController.goToStep(1)" 
+                class="w-1/3 py-4 rounded-xl border border-stone-300 dark:border-stone-700 text-stone-700 dark:text-stone-300 text-xs font-semibold uppercase tracking-wider transition-colors"
+              >
+                Back
+              </button>
+              <button 
+                type="button" 
+                onclick="checkoutController.goToStep(3)" 
+                class="flex-1 py-4 rounded-xl gold-gradient-bg text-black font-semibold text-xs uppercase tracking-widest shadow-lg btn-shimmer"
+              >
+                Continue to Payment
+              </button>
+            </div>
+          </div>
+
+          <!-- STEP 3: PAYMENT METHOD (Cash on Delivery & Card UI) -->
+          <div id="step-content-3" class="hidden">
+            <h3 class="font-serif-luxury text-2xl font-medium text-stone-900 dark:text-stone-100 mb-2">Vault Settlement</h3>
+            <p class="text-xs text-stone-500 dark:text-stone-400 mb-6">Select your payment medium.</p>
+
+            <div class="grid grid-cols-3 gap-3 mb-6">
+              <button 
+                type="button" 
+                onclick="checkoutController.setPaymentMethod('card')" 
+                data-method="card" 
+                class="payment-method-btn p-3 rounded-xl border-2 border-[#D4AF37] bg-[#D4AF37]/15 text-[#D4AF37] text-xs font-semibold uppercase tracking-wider flex flex-col items-center gap-1.5 transition-all"
+              >
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"/></svg>
+                <span>Card (Visa/Master)</span>
+              </button>
+
+              <button 
+                type="button" 
+                onclick="checkoutController.setPaymentMethod('cod')" 
+                data-method="cod" 
+                class="payment-method-btn p-3 rounded-xl border-2 border-stone-300 dark:border-stone-700 text-stone-600 dark:text-stone-400 text-xs font-semibold uppercase tracking-wider flex flex-col items-center gap-1.5 transition-all"
+              >
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+                <span>Cash on Delivery</span>
+              </button>
+
+              <button 
+                type="button" 
+                onclick="checkoutController.setPaymentMethod('wire')" 
+                data-method="wire" 
+                class="payment-method-btn p-3 rounded-xl border-2 border-stone-300 dark:border-stone-700 text-stone-600 dark:text-stone-400 text-xs font-semibold uppercase tracking-wider flex flex-col items-center gap-1.5 transition-all"
+              >
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z"/></svg>
+                <span>HBL / Alfalah Wire</span>
+              </button>
+            </div>
+
+            <!-- Virtual Card Preview -->
+            <div id="card-payment-panel">
+              <div class="virtual-credit-card p-6 text-white mb-6 relative aspect-[1.586/1] max-w-sm mx-auto flex flex-col justify-between">
+                <div class="flex items-center justify-between">
+                  <div class="chip-gold w-11 h-8 rounded-md"></div>
+                  <div id="vc-brand-logo">
+                    <span class="font-bold text-blue-400 italic text-sm">VISA</span>
+                  </div>
+                </div>
+
+                <div class="my-4">
+                  <div id="vc-number" class="font-mono text-lg sm:text-xl tracking-[0.2em] font-medium text-stone-100">
+                    •••• •••• •••• ••••
+                  </div>
+                </div>
+
+                <div class="flex items-center justify-between text-xs">
+                  <div>
+                    <span class="text-[9px] uppercase tracking-wider text-stone-400 block">Cardholder</span>
+                    <span id="vc-name" class="font-semibold tracking-wider uppercase text-stone-200">ESTEEMED CLIENT</span>
+                  </div>
+                  <div>
+                    <span class="text-[9px] uppercase tracking-wider text-stone-400 block">Expires</span>
+                    <span id="vc-expiry" class="font-mono font-semibold text-stone-200">12/28</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="space-y-4">
+                <div>
+                  <label for="card-number-input" class="block text-xs font-semibold uppercase tracking-wider text-stone-500 mb-1">Card Number *</label>
+                  <input id="card-number-input" type="text" maxlength="19" placeholder="4242 •••• •••• 4242" class="w-full px-4 py-3 rounded-xl bg-stone-50 dark:bg-stone-900 border border-stone-300 dark:border-stone-700 text-xs font-mono text-stone-900 dark:text-stone-100 focus:outline-none focus:border-[#D4AF37]"/>
+                </div>
+
+                <div>
+                  <label for="card-holder-input" class="block text-xs font-semibold uppercase tracking-wider text-stone-500 mb-1">Cardholder Full Name *</label>
+                  <input id="card-holder-input" type="text" placeholder="ESTEEMED CLIENT" class="w-full px-4 py-3 rounded-xl bg-stone-50 dark:bg-stone-900 border border-stone-300 dark:border-stone-700 text-xs text-stone-900 dark:text-stone-100 uppercase focus:outline-none focus:border-[#D4AF37]"/>
+                </div>
+
+                <div class="grid grid-cols-2 gap-4">
+                  <div>
+                    <label for="card-expiry-input" class="block text-xs font-semibold uppercase tracking-wider text-stone-500 mb-1">Expiry (MM/YY) *</label>
+                    <input id="card-expiry-input" type="text" maxlength="5" placeholder="12/28" class="w-full px-4 py-3 rounded-xl bg-stone-50 dark:bg-stone-900 border border-stone-300 dark:border-stone-700 text-xs font-mono text-stone-900 dark:text-stone-100 focus:outline-none focus:border-[#D4AF37]"/>
+                  </div>
+                  <div>
+                    <label for="card-cvc-input" class="block text-xs font-semibold uppercase tracking-wider text-stone-500 mb-1">Security Code (CVC) *</label>
+                    <input id="card-cvc-input" type="password" maxlength="4" placeholder="•••" class="w-full px-4 py-3 rounded-xl bg-stone-50 dark:bg-stone-900 border border-stone-300 dark:border-stone-700 text-xs font-mono text-stone-900 dark:text-stone-100 focus:outline-none focus:border-[#D4AF37]"/>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Cash on Delivery Panel (Nationwide Pakistan) -->
+            <div id="cod-payment-panel" class="hidden p-6 rounded-2xl bg-stone-100 dark:bg-stone-900/60 border border-stone-200 dark:border-stone-800 text-center">
+              <div class="w-12 h-12 rounded-full bg-[#D4AF37]/20 border border-[#D4AF37] mx-auto flex items-center justify-center text-[#D4AF37] mb-3">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+              </div>
+              <h4 class="font-serif-luxury text-xl font-medium text-stone-900 dark:text-stone-100">Cash on Delivery (Pakistan Nationwide)</h4>
+              <p class="text-xs text-stone-500 dark:text-stone-400 mt-2 max-w-md mx-auto leading-relaxed">
+                Pay in cash (PKR) upon white-glove arrival at your doorstep. You will be able to inspect the tamper-evident wax seal before handing over payment to our certified dispatch courier.
+              </p>
+            </div>
+
+            <!-- Wire Transfer Panel -->
+            <div id="wire-payment-panel" class="hidden p-6 rounded-2xl bg-stone-100 dark:bg-stone-900/60 border border-stone-200 dark:border-stone-800 text-center">
+              <div class="w-12 h-12 rounded-full bg-[#D4AF37]/20 border border-[#D4AF37] mx-auto flex items-center justify-center text-[#D4AF37] mb-3">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z"/></svg>
+              </div>
+              <h4 class="font-serif-luxury text-xl font-medium text-stone-900 dark:text-stone-100">Direct Bank Remittance (HBL / Bank Alfalah)</h4>
+              <p class="text-xs text-stone-500 dark:text-stone-400 mt-2 max-w-md mx-auto leading-relaxed">
+                Official IBAN routing credentials will be presented upon order placement. Dispatch occurs immediately following interbank settlement.
+              </p>
+            </div>
+
+            <div class="mt-8 flex gap-3">
+              <button 
+                type="button" 
+                onclick="checkoutController.goToStep(2)" 
+                class="w-1/3 py-4 rounded-xl border border-stone-300 dark:border-stone-700 text-stone-700 dark:text-stone-300 text-xs font-semibold uppercase tracking-wider transition-colors"
+              >
+                Back
+              </button>
+              <button 
+                type="button" 
+                onclick="checkoutController.submitFinalOrder()" 
+                class="flex-1 py-4 rounded-xl gold-gradient-bg text-black font-semibold text-xs uppercase tracking-widest shadow-xl hover:shadow-2xl transition-all btn-shimmer"
+              >
+                Authorize & Place Order (PKR)
+              </button>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Sticky Order Summary in PKR -->
+        <div class="lg:col-span-5 bg-white dark:bg-[#121215] p-6 sm:p-8 rounded-3xl border border-stone-200 dark:border-stone-800 shadow-xl sticky top-28">
+          <h4 class="font-serif-luxury text-xl font-medium text-stone-900 dark:text-stone-100 pb-4 border-b border-stone-200 dark:border-stone-800">
+            Shopping Bag Summary (PKR)
+          </h4>
+
+          <div id="checkout-order-summary-items" class="max-h-72 overflow-y-auto my-4 divide-y divide-stone-200/50 dark:divide-stone-800/50 pr-2">
+            <!-- Populated by checkoutController.renderOrderSummary() -->
+          </div>
+
+          <div id="checkout-order-summary-financials" class="pt-4 border-t border-stone-200 dark:border-stone-800">
+            <!-- Populated by checkoutController.renderOrderSummary() -->
+          </div>
+
+          <div class="mt-6 p-3 rounded-xl bg-stone-100/70 dark:bg-stone-900/60 border border-stone-200/80 dark:border-stone-800/80 flex items-center gap-3 text-[11px] text-stone-500">
+            <svg class="w-4 h-4 text-[#D4AF37] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
+            <span>256-Bit SSL Encrypted Sovereign Payment Protocol</span>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- VIEW 4: ORDER CONFIRMATION SCREEN & INVOICE -->
+    <section id="order-confirmation-view" class="hidden py-16 px-4">
+      <div id="order-confirmation-container">
+        <!-- Rendered by checkoutController.renderOrderConfirmation() -->
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =====================================================================
+       SLIDE-OVER CART DRAWER
+       ===================================================================== -->
+  <div id="cart-drawer" class="hidden fixed inset-0 z-50 overflow-hidden">
+    <div 
+      id="cart-drawer-backdrop" 
+      onclick="UI.closeCartDrawer()" 
+      class="drawer-backdrop fixed inset-0 bg-black/60 backdrop-blur-sm opacity-0"
+    ></div>
+
+    <div class="fixed inset-y-0 right-0 max-w-full flex pl-10">
+      <div 
+        id="cart-drawer-panel" 
+        class="drawer-panel w-screen max-w-md bg-[#FAF8F5] dark:bg-[#111113] border-l border-stone-200 dark:border-stone-800 shadow-2xl flex flex-col justify-between translate-x-full"
+      >
+        <div class="p-6 border-b border-stone-200 dark:border-stone-800 flex items-center justify-between">
+          <div class="flex items-center gap-2">
+            <svg class="w-5 h-5 text-[#D4AF37]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg>
+            <h3 class="font-serif-luxury text-xl font-medium text-stone-900 dark:text-stone-100">Your Shopping Bag</h3>
+          </div>
+          <button 
+            type="button" 
+            onclick="UI.closeCartDrawer()" 
+            class="p-2 text-stone-400 hover:text-stone-900 dark:hover:text-white transition-colors"
+          >
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+          </button>
+        </div>
+
+        <!-- Free Shipping Tracker in PKR -->
+        <div class="px-6 py-3.5 bg-stone-100 dark:bg-stone-900/60 border-b border-stone-200 dark:border-stone-800">
+          <p id="free-shipping-text" class="text-xs text-stone-700 dark:text-stone-300 leading-snug">
+            Add <strong>Rs. 140,000</strong> more to qualify for <strong>Complimentary White-Glove Shipping across Pakistan</strong>
+          </p>
+          <div class="w-full bg-stone-200 dark:bg-stone-800 h-2 rounded-full overflow-hidden mt-2">
+            <div id="free-shipping-progress" class="bg-[#D4AF37] h-full shipping-progress-striped transition-all duration-500" style="width: 0%"></div>
+          </div>
+        </div>
+
+        <div class="flex-1 overflow-y-auto p-6 space-y-4">
+          <div id="cart-empty-state" class="hidden py-20 text-center">
+            <div class="w-16 h-16 mx-auto mb-4 rounded-full border border-stone-300 dark:border-stone-700 flex items-center justify-center text-stone-400">
+              <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg>
+            </div>
+            <h4 class="font-serif-luxury text-2xl text-stone-900 dark:text-stone-100">Your bag is currently unadorned</h4>
+            <p class="text-xs text-stone-500 mt-2 max-w-xs mx-auto">Discover our handcrafted leather goods, rare botanical fragrances, and fine accessories in Pakistani Rupees.</p>
+            <button 
+              type="button" 
+              onclick="UI.closeCartDrawer(); document.getElementById('products-section')?.scrollIntoView({ behavior: 'smooth' });" 
+              class="mt-6 px-6 py-2.5 rounded-full border border-[#D4AF37] text-[#D4AF37] hover:bg-[#D4AF37] hover:text-black text-xs font-semibold tracking-wider uppercase transition-all"
+            >
+              Explore Collections
+            </button>
+          </div>
+
+          <div id="cart-items-container" class="space-y-4">
+            <!-- Dynamically populated by UI.renderCartDrawer() -->
+          </div>
+        </div>
+
+        <div id="cart-totals-container" class="p-6 border-t border-stone-200 dark:border-stone-800 bg-white/70 dark:bg-[#151518]/90">
+          <!-- Populated by UI.renderCartDrawer() -->
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- =====================================================================
+       QUICK VIEW MODAL
+       ===================================================================== -->
+  <div id="quick-view-modal" class="hidden fixed inset-0 z-50 overflow-y-auto">
+    <div class="fixed inset-0 bg-black/75 backdrop-blur-md" onclick="UI.closeQuickView()"></div>
+    <div class="min-h-screen px-4 text-center flex items-center justify-center py-8">
+      <div class="inline-block w-full max-w-4xl p-6 sm:p-10 my-8 overflow-hidden text-left align-middle transition-all transform bg-white dark:bg-[#131316] rounded-3xl border border-stone-200 dark:border-stone-800 shadow-2xl relative z-10">
+        <button 
+          type="button" 
+          onclick="UI.closeQuickView()" 
+          class="absolute top-5 right-5 p-2 rounded-full text-stone-400 hover:text-stone-900 dark:hover:text-white transition-colors"
+        >
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+
+        <div id="quick-view-content">
+          <!-- Injected dynamically by UI.openQuickView() -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- =====================================================================
+       WISHLIST MODAL
+       ===================================================================== -->
+  <div id="wishlist-modal" class="hidden fixed inset-0 z-50 overflow-y-auto">
+    <div class="fixed inset-0 bg-black/70 backdrop-blur-sm" onclick="UI.closeWishlistModal()"></div>
+    <div class="min-h-screen px-4 text-center flex items-center justify-center py-8">
+      <div class="inline-block w-full max-w-2xl p-6 sm:p-8 my-8 text-left align-middle transition-all transform bg-white dark:bg-[#131316] rounded-3xl border border-stone-200 dark:border-stone-800 shadow-2xl relative z-10">
+        <div class="flex items-center justify-between pb-4 border-b border-stone-200 dark:border-stone-800">
+          <div class="flex items-center gap-2">
+            <svg class="w-5 h-5 text-red-500 fill-red-500" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+            <h3 class="font-serif-luxury text-2xl font-medium text-stone-900 dark:text-stone-100">Your Private Wishlist</h3>
+          </div>
+          <button type="button" onclick="UI.closeWishlistModal()" class="p-2 text-stone-400 hover:text-stone-900 dark:hover:text-white">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+          </button>
+        </div>
+
+        <div id="wishlist-items-container" class="my-6 space-y-3 max-h-96 overflow-y-auto pr-2">
+          <!-- Populated by UI.openWishlistModal() -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- =====================================================================
+       ATELIER CUSTOMIZER & IN-BROWSER ADMIN STUDIO (Self-Editing Modal)
+       ===================================================================== -->
+  <div id="admin-customizer-modal" class="hidden fixed inset-0 z-50 overflow-y-auto">
+    <div class="fixed inset-0 bg-black/80 backdrop-blur-md" onclick="UI.closeCustomizerModal()"></div>
+    <div class="min-h-screen px-4 text-center flex items-center justify-center py-8">
+      <div class="inline-block w-full max-w-4xl p-6 sm:p-8 my-8 text-left align-middle transition-all transform bg-white dark:bg-[#121215] rounded-3xl border border-[#D4AF37]/50 shadow-2xl relative z-10">
+        
+        <!-- Customizer Header -->
+        <div class="flex items-center justify-between pb-5 border-b border-stone-200 dark:border-stone-800">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-xl bg-[#D4AF37]/20 border border-[#D4AF37] flex items-center justify-center text-[#D4AF37]">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+            </div>
+            <div>
+              <h3 class="font-serif-luxury text-2xl font-semibold text-stone-900 dark:text-stone-50">Atelier Studio & Website Editor</h3>
+              <p class="text-xs text-stone-400">Edit your store name, Pakistani Rupee prices, and creations live without touching code.</p>
+            </div>
+          </div>
+          <button type="button" onclick="UI.closeCustomizerModal()" class="p-2 text-stone-400 hover:text-stone-900 dark:hover:text-white">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+          </button>
+        </div>
+
+        <!-- Customizer Navigation Tabs -->
+        <div class="flex border-b border-stone-200 dark:border-stone-800 gap-6 mt-4">
+          <button 
+            type="button" 
+            onclick="UI.switchCustomizerTab('general')" 
+            data-tab="general" 
+            class="customizer-tab-btn py-3 text-xs font-semibold uppercase tracking-wider border-b-2 border-[#D4AF37] text-[#D4AF37] transition-all"
+          >
+            Store Texts & Banners
+          </button>
+          <button 
+            type="button" 
+            onclick="UI.switchCustomizerTab('products')" 
+            data-tab="products" 
+            class="customizer-tab-btn py-3 text-xs font-semibold uppercase tracking-wider border-b-2 border-transparent text-stone-400 hover:text-stone-200 transition-all"
+          >
+            Product Catalog & PKR Prices
+          </button>
+          <button 
+            type="button" 
+            onclick="UI.switchCustomizerTab('export')" 
+            data-tab="export" 
+            class="customizer-tab-btn py-3 text-xs font-semibold uppercase tracking-wider border-b-2 border-transparent text-stone-400 hover:text-stone-200 transition-all"
+          >
+            Export to `products.js` Code
+          </button>
+        </div>
+
+        <!-- TAB 1: GENERAL STORE TEXTS -->
+        <div id="customizer-tab-general" class="py-6 space-y-4">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs">
+            <div>
+              <label class="block font-semibold uppercase text-stone-400 mb-1">Store Brand Name</label>
+              <input id="custom-store-name" type="text" class="w-full px-3 py-2.5 rounded-xl bg-stone-50 dark:bg-stone-900 border border-stone-300 dark:border-stone-700 text-stone-900 dark:text-stone-100 font-semibold"/>
+            </div>
+
+            <div>
+              <label class="block font-semibold uppercase text-stone-400 mb-1">Free Shipping Threshold in PKR</label>
+              <input id="custom-shipping-threshold" type="number" class="w-full px-3 py-2.5 rounded-xl bg-stone-50 dark:bg-stone-900 border border-stone-300 dark:border-stone-700 text-stone-900 dark:text-stone-100 font-semibold"/>
+            </div>
+
+            <div class="sm:col-span-2">
+              <label class="block font-semibold uppercase text-stone-400 mb-1">Top Announcement Banner Text</label>
+              <input id="custom-store-announcement" type="text" class="w-full px-3 py-2.5 rounded-xl bg-stone-50 dark:bg-stone-900 border border-stone-300 dark:border-stone-700 text-stone-900 dark:text-stone-100"/>
+            </div>
+
+            <div class="sm:col-span-2">
+              <label class="block font-semibold uppercase text-stone-400 mb-1">Hero Main Headline (HTML allowed)</label>
+              <input id="custom-hero-headline" type="text" class="w-full px-3 py-2.5 rounded-xl bg-stone-50 dark:bg-stone-900 border border-stone-300 dark:border-stone-700 text-stone-900 dark:text-stone-100"/>
+            </div>
+
+            <div class="sm:col-span-2">
+              <label class="block font-semibold uppercase text-stone-400 mb-1">Hero Subtitle</label>
+              <textarea id="custom-hero-subtitle" rows="2" class="w-full px-3 py-2.5 rounded-xl bg-stone-50 dark:bg-stone-900 border border-stone-300 dark:border-stone-700 text-stone-900 dark:text-stone-100"></textarea>
+            </div>
+          </div>
+
+          <div class="pt-4 flex justify-end">
+            <button 
+              type="button" 
+              onclick="UI.saveCustomizerGeneralSettings()"
+              class="px-8 py-3 rounded-xl gold-gradient-bg text-black font-semibold text-xs uppercase tracking-widest shadow-lg btn-shimmer"
+            >
+              Save Changes Live
+            </button>
+          </div>
+        </div>
+
+        <!-- TAB 2: PRODUCT CATALOG & PKR RATES -->
+        <div id="customizer-tab-products" class="hidden py-6">
+          <div class="flex items-center justify-between mb-4">
+            <div>
+              <h4 class="font-serif-luxury text-xl font-semibold text-stone-900 dark:text-stone-100">Creations Catalog (Pakistani Rupees)</h4>
+              <p class="text-xs text-stone-400">Click Edit to modify any product or Add to publish new items.</p>
+            </div>
+            <div class="flex items-center gap-2">
+              <button 
+                type="button" 
+                onclick="UI.openAddProductForm()"
+                class="px-4 py-2 rounded-xl gold-gradient-bg text-black text-xs font-semibold uppercase tracking-wider flex items-center gap-1.5 shadow"
+              >
+                <span>➕ Add New Creation</span>
+              </button>
+              <button 
+                type="button" 
+                onclick="UI.handleResetProducts()"
+                class="px-3 py-2 rounded-xl border border-stone-300 dark:border-stone-700 hover:border-red-500 text-stone-400 hover:text-red-500 text-xs transition-colors"
+                title="Reset to original 12 luxury products"
+              >
+                Reset Defaults
+              </button>
+            </div>
+          </div>
+
+          <!-- Add / Edit Inline Form Container -->
+          <div id="customizer-product-form-container"></div>
+
+          <!-- Products Table -->
+          <div class="max-h-96 overflow-y-auto border border-stone-200 dark:border-stone-800 rounded-2xl">
+            <table class="w-full text-left border-collapse">
+              <thead class="bg-stone-100 dark:bg-stone-900/90 sticky top-0 text-[10px] uppercase tracking-wider text-stone-400">
+                <tr>
+                  <th class="py-2.5 px-3">Product</th>
+                  <th class="py-2.5 px-3">Price (PKR)</th>
+                  <th class="py-2.5 px-3">Stock</th>
+                  <th class="py-2.5 px-3 text-right">Actions</th>
+                </tr>
+              </thead>
+              <tbody id="customizer-products-table-body">
+                <!-- Injected by UI.renderCustomizerProductsList() -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- TAB 3: CODE EXPORT TO PRODUCTS.JS -->
+        <div id="customizer-tab-export" class="hidden py-6 space-y-4">
+          <div class="p-4 rounded-xl bg-stone-100 dark:bg-stone-900 border border-stone-200 dark:border-stone-800 text-xs">
+            <h5 class="font-semibold text-stone-900 dark:text-stone-100 mb-1">Permanent File Export</h5>
+            <p class="text-stone-400 leading-relaxed">
+              While changes in the Atelier Studio save automatically to your browser's <code class="text-[#D4AF37]">localStorage</code>, you can also permanently commit your edited products into <code class="text-[#D4AF37]">c:\Users\OFFICE\Desktop\ai web\js\products.js</code>:
+            </p>
+          </div>
+
+          <textarea 
+            id="customizer-export-code" 
+            rows="10" 
+            readonly 
+            class="w-full p-4 rounded-2xl bg-black font-mono text-[11px] text-stone-300 border border-stone-800 focus:outline-none"
+          ></textarea>
+
+          <button 
+            type="button" 
+            onclick="UI.copyExportCode()"
+            class="px-6 py-3 rounded-xl gold-gradient-bg text-black font-semibold text-xs uppercase tracking-widest shadow-lg flex items-center gap-2"
+          >
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
+            Copy Code to Clipboard
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- =====================================================================
+       FLOATING ATELIER CUSTOMIZER TRIGGER BUTTON (Self-Editing Button)
+       ===================================================================== -->
+  <aside aria-label="Store Controls" class="fixed bottom-6 left-6 z-40">
+    <button 
+      type="button" 
+      onclick="UI.openCustomizerModal()"
+      class="px-4 py-3 rounded-2xl bg-stone-900/90 dark:bg-stone-900/90 text-[#D4AF37] border border-[#D4AF37]/50 shadow-2xl hover:scale-105 active:scale-95 transition-all flex items-center gap-2.5 backdrop-blur-md group"
+      title="Customize & Edit Store Content"
+    >
+      <span class="w-2.5 h-2.5 rounded-full bg-[#D4AF37] animate-ping"></span>
+      <span class="text-xs font-bold tracking-wider uppercase">⚙️ Edit Store (Studio)</span>
+    </button>
+  </aside>
+
+  <!-- =====================================================================
+       FLOATING TOAST NOTIFICATION STACK
+       ===================================================================== -->
+  <div id="toast-container" class="fixed bottom-6 right-6 z-50 flex flex-col gap-3 pointer-events-none max-w-sm w-full"></div>
+
+  <!-- =====================================================================
+       LUXURY FOOTER
+       ===================================================================== -->
+  <footer class="mt-auto border-t border-stone-200/80 dark:border-stone-800/80 bg-white/70 dark:bg-[#0A0A0C] text-stone-600 dark:text-stone-400 text-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
+        
+        <div class="lg:col-span-2 space-y-4">
+          <div class="flex items-center gap-2.5">
+            <div class="w-8 h-8 rounded-full border border-[#D4AF37] flex items-center justify-center text-[#D4AF37]">
+              <span class="font-display font-bold text-[10px]">AI</span>
+            </div>
+            <span class="store-brand-name font-display text-lg font-bold tracking-[0.2em] text-stone-900 dark:text-stone-50">AI WEB</span>
+          </div>
+          <p class="text-xs text-stone-500 leading-relaxed max-w-sm">
+            Haute maison dedicated to generational leather artisanship, rare botanical extraits, and certified fine horology, priced and delivered nationwide in Pakistani Rupees.
+          </p>
+          <div class="pt-2 text-[11px] text-[#B88E28] dark:text-[#D4AF37] font-semibold tracking-wider">
+            SALONS: ISLAMABAD • LAHORE • KARACHI • PARIS • DUBAI • LONDON
+          </div>
+        </div>
+
+        <div>
+          <h5 class="text-xs font-semibold uppercase tracking-widest text-stone-900 dark:text-stone-100 mb-4">Collections</h5>
+          <ul class="space-y-2.5">
+            <li><button onclick="UI.filterByCategory('bags'); UI.closeProductDetail(); window.scrollTo({top: 400, behavior:'smooth'});" class="hover:text-[#D4AF37] transition-colors">Bags & Leather Goods</button></li>
+            <li><button onclick="UI.filterByCategory('perfumes'); UI.closeProductDetail(); window.scrollTo({top: 400, behavior:'smooth'});" class="hover:text-[#D4AF37] transition-colors">Haute Parfumerie</button></li>
+            <li><button onclick="UI.filterByCategory('accessories'); UI.closeProductDetail(); window.scrollTo({top: 400, behavior:'smooth'});" class="hover:text-[#D4AF37] transition-colors">Fine Accessories</button></li>
+            <li><button onclick="UI.filterByCategory('all'); UI.closeProductDetail(); window.scrollTo({top: 400, behavior:'smooth'});" class="hover:text-[#D4AF37] transition-colors">The 2026 Sovereign Archive</button></li>
+          </ul>
+        </div>
+
+        <div>
+          <h5 class="text-xs font-semibold uppercase tracking-widest text-stone-900 dark:text-stone-100 mb-4">Client Care</h5>
+          <ul class="space-y-2.5">
+            <li><a href="#" onclick="UI.showToast('Pakistan Concierge Active', 'Our private client directors in Islamabad, Lahore and Karachi are available 24/7.'); return false;" class="hover:text-[#D4AF37] transition-colors">Private Client Concierge</a></li>
+            <li><a href="#" onclick="UI.showToast('Delivery in Pakistan', 'Complimentary nationwide express delivery on consignments over Rs. 140,000.'); return false;" class="hover:text-[#D4AF37] transition-colors">Nationwide Delivery</a></li>
+            <li><a href="#" onclick="UI.showToast('Cash on Delivery', 'Cash on Delivery is available across all major cities in Pakistan.'); return false;" class="hover:text-[#D4AF37] transition-colors">Cash on Delivery Policy</a></li>
+            <li><a href="#" onclick="UI.showToast('Provenance Certificate', 'Each acquisition includes a registered and hallmarked certificate.'); return false;" class="hover:text-[#D4AF37] transition-colors">Certificate of Provenance</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h5 class="text-xs font-semibold uppercase tracking-widest text-stone-900 dark:text-stone-100 mb-4">Legal & Security</h5>
+          <ul class="space-y-2.5">
+            <li><span class="text-stone-500">256-Bit Vault Protocol</span></li>
+            <li><span class="text-stone-500">Pakistani Rupee (PKR) Direct Settlement</span></li>
+            <li><span class="text-stone-500">Strict Client Discretion</span></li>
+            <li><span class="text-stone-500">Conflict-Free Certified Gold</span></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="mt-12 pt-8 border-t border-stone-200 dark:border-stone-800/60 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-stone-500">
+        <p>© 2026 AI WEB. Haute Maison &amp; Luxury Atelier Pakistan. All rights reserved.</p>
+        <button onclick="UI.openCustomizerModal()" class="text-[#D4AF37] hover:underline font-semibold">⚙️ Open Atelier Customizer Studio</button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Concierge Button -->
+  <a 
+    href="https://api.whatsapp.com/send?text=Assalam-o-Alaikum!%20I%20am%20interested%20in%20your%20luxury%20collection." 
+    target="_blank" 
+    rel="noopener noreferrer"
+    aria-label="Chat on WhatsApp"
+    class="fixed bottom-6 right-6 z-40 bg-[#25D366] hover:bg-[#20ba5a] text-white p-3.5 rounded-full shadow-2xl flex items-center gap-2 transition-transform transform hover:scale-110 group focus:outline-none focus:ring-4 focus:ring-emerald-400"
+    title="Chat with Luxury Concierge on WhatsApp"
+  >
+    <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+    <span class="hidden sm:inline text-xs font-semibold tracking-wider pr-1">WhatsApp Concierge</span>
+  </a>
+
+  <!-- =====================================================================
+       SCRIPTS (Modular Architecture)
+       ===================================================================== -->
+  <script src="js/products.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/checkout.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
